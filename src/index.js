@@ -9,15 +9,24 @@ const todayDate = date.getUTCDate();
 const currentMonth = date.getUTCMonth();
 const currentYear = date.getUTCFullYear();
 
+function Card(){
+  return <div className="card">
+            <h3>{cardHeading}</h3>
+            <p>{cardTaxt}</p>
+            <p>{todayDate + "/" + currentMonth + "/" + currentYear}</p>
+        </div>
+          
+}
+
 
 ReactDOM.render(
    <div>
      <h1 className="headingStyle">{heading}</h1>
-     <div className="card">
-       <h3>{cardHeading}</h3>
-       <p>{cardTaxt}</p>
-       <p>{todayDate + "/" + currentMonth + "/" + currentYear}</p>
-     </div>
+     <div className="container">
+          <Card />
+          <Card />
+          <Card />
+      </div>
    </div>,
   
    document.getElementById('root'),
