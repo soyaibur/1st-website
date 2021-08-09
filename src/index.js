@@ -9,11 +9,19 @@ const todayDate = date.getUTCDate();
 const currentMonth = date.getUTCMonth();
 const currentYear = date.getUTCFullYear();
 
+const headingStyle = {
+  color: "white",
+  textAlign: "center",
+  padding: "3rem",
+  backgroundColor: "purple",
+  margin: "0"
+}
+
 
 ReactDOM.render(
    <div>
-     <h1 style={{color:'white',backgroundColor:'purple'}}>{heading}</h1>
-     <div>
+     <h1 style={headingStyle}>{heading}</h1>
+     <div style={{backgroundColor:'wheat',width:'30vw',display:'flex',textAlign:'center',justifyContent:'center',flexDirection:'column',padding:'1rem'}}>
        <h3>{cardHeading}</h3>
        <p>{cardTaxt}</p>
        <p>{todayDate + "/" + currentMonth + "/" + currentYear}</p>
