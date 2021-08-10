@@ -1,24 +1,31 @@
 body{
     margin:0;
     padding:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
-.container{
-    display: flex;
-}
+
+
 .headingStyle{
     color: white;
     text-align: center;
     padding: 3rem;
     background-color: purple;
-    margin: 0;
+    width:100vw;
   }
+
   .card{
     background-color:wheat;
-    width:30vw;
+    width:28vw;
     display:flex;
     text-align:center;
     justify-content:center;
     flex-direction:column;
     padding:1rem;
+    margin: .5rem;
+    float: left;
   }
+ 
